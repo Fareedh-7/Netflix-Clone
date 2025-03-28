@@ -4,3 +4,48 @@
     box-sizing: border-box;
 }
 
+.mainNetflixContainer{
+    border: 2px solid red;
+    padding: 0 2rem;
+}
+
+.navContainer{
+    border: 2px solid green;
+    height: 20vh;       
+}
+
+.upperNavbarSection{
+    border: 2px solid blue;
+    display: flex;
+    height: 50%;
+}
+
+.logoSection{
+    border: 2px solid yellow;
+    width: 50%;
+}
+
+.logoSection > .netflixLogo{
+    width: 25%;
+
+}
+
+.navButtonSection{
+    border: 2px solid orange;
+    width: 50%;
+}
+
+.languageButton{
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 50px;
+}
+
+.languageButton > p{
+    margin:0 5px;
+}
+
+.lowerNavbarSection{
+    border: 2px solid black;
+    height: 50%;
+}
