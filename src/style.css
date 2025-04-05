@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main container */
+
+.container{
+    background-color: black;
+}
+
+/* navbar section */
+
+.navSection{
+    border: 2px solid gold;
+}
+
+.upperNavbar{
+    border: 2px solid red;
+    display: flex;
+    width: 100%;
+}
+
+.leftSection{
+    border: 2px solid blue;
+    width: 50%;
+}
+
+.leftSection img{
+    width: 30%;
+}
+
+.rightSection{
+    border: 2px solid green;
+    width: 50%;
+}
+
+.lowerNavbar{
+    border: 2px solid purple;
+}
