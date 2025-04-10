@@ -5,19 +5,47 @@
     font-family: sans-serif;
 }
 
+body{
+    background-color: black;
+}
+
 /* main container */
 
 .container{
-    background-color: black;
     padding: 0 2rem;
     height: 100vh;
-    border: 2px solid white;
+    /* border: 2px solid white; */  
+}
+
+/* background */
+
+.backgroundContainer{
+    background: url("./Images/Banner_img.jpg");
+    height: 200vh;
+    filter: blur(20px);
+    opacity: 30%;
+    position: relative;
+}
+
+.pinkOverlay{
+    background-color: rgba(179, 124, 133, 0.5);
+    height: 200vh;
+    width: 100%;
+}
+
+/* content-container */
+
+.navContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* navbar section */
 
 .navSection{
     border: 2px solid gold;
+    position: fixed;
 }
 
 .upperNavbar{
@@ -84,7 +112,7 @@
     border: 2px solid purple;
     width: 40%;
     margin: auto;
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.829);
     border-radius: 50px;
 }
 
@@ -101,4 +129,14 @@
 
 .menuListItems li:hover{
     color: white;
+}
+
+.section-container{
+    padding: 0 2rem;
+}
+
+.bannerSection {
+    background: url("./Images/Banner_img.jpg");
+    border: 2px solid white;
+    height: 100vh;
 }
