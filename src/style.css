@@ -2,141 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 body{
     background-color: black;
 }
 
-/* main container */
-
-.container{
-    padding: 0 2rem;
-    height: 100vh;
-    /* border: 2px solid white; */  
-}
-
-/* background */
-
 .backgroundContainer{
     background: url("./Images/Banner_img.jpg");
+    width: 100%;
     height: 200vh;
+    background-image: 100% 100%;
     filter: blur(20px);
-    opacity: 30%;
-    position: relative;
+    opacity: 20%;
+    position: absolute;
 }
 
 .pinkOverlay{
-    background-color: rgba(179, 124, 133, 0.5);
-    height: 200vh;
+    background-color: rgba(0, 0, 0, 0.637);
     width: 100%;
+    height: 200vh;
 }
 
-/* content-container */
+.contentContainer{
+    position: relative;
+}
 
 .navContainer{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* navbar section */
-
-.navSection{
-    border: 2px solid gold;
+    border: 2px solid saddlebrown;
     position: fixed;
 }
 
-.upperNavbar{
-    border: 2px solid red;
+.upperNav{
+    border: 2px solid white;
     display: flex;
     width: 100%;
 }
 
-.leftSection{
-    border: 2px solid blue;
+.navLeftSection{
+    border: 2px solid gold;
     width: 50%;
-    display: flex;
-    justify-content: space-between;
 }
 
-.leftSection img{
+.navLeftSection .logoImg{
     width: 30%;
 }
 
-.rightSection{
-    border: 2px solid green;
+.navRightSection{
+    border:  2px solid green;
     width: 50%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    padding-left: 31%;
 }
 
-.languageButton{
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.596);
-    color: white;
-    padding: .5rem 1rem;
-    border-radius: 50px;
-    margin-right: 1rem;
+.lowerNav{
+    border: 2px solid blue;
 }
 
-.languageButton select{
-    background: transparent;
-    color: white;
-    border: none;
-    font-size: 1rem;
-    outline: none;
-}
-
-.languageButton select option{
-    color: black;
-}
-
-.signinButton{
-    padding: .5rem 1rem;
-    border-radius: 50px;
-    font-size: 1rem;
-    border: none;
-    transition: 0.5s;
-    cursor: pointer;
-
-    &:hover{
-        background-color: rgb(163, 163, 163);
-        transition: 0.5s;
-    }
-}
-
-.lowerNavbar{
-    border: 2px solid purple;
-    width: 40%;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.829);
-    border-radius: 50px;
-}
-
-.menuListItems{
-    color: rgba(255, 255, 255, 0.726);
+.menuList{
+    border: 2px solid violet;
     display: flex;
     justify-content: space-evenly;
-    list-style: none;
-    align-items: center;
-    padding: .6rem 0;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.menuListItems li:hover{
-    color: white;
-}
-
-.section-container{
-    padding: 0 2rem;
-}
-
-.bannerSection {
-    background: url("./Images/Banner_img.jpg");
-    border: 2px solid white;
-    height: 100vh;
+    width: 30%;
+    margin: auto;
 }
