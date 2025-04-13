@@ -14,24 +14,31 @@ body{
     width: 100%;
     height: 200vh;
     background-image: 100% 100%;
-    filter: blur(20px);
+    filter: blur(16px);
     opacity: 20%;
-    position: absolute;
+    position: relative;
 }
 
 .pinkOverlay{
-    background-color: rgba(0, 0, 0, 0.637);
+    background-color: rgba(131, 64, 98, 0.555);
     width: 100%;
     height: 200vh;
 }
 
 .contentContainer{
-    position: relative;
+    position: absolute;
+    padding: 0 2rem;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .navContainer{
     /* border: 2px solid saddlebrown; */
     position: fixed;
+    top: 0;
+    left: 10px;
+    right: 5px;
 }
 
 .upperNav{
@@ -95,7 +102,7 @@ body{
 }
 
 .menuList{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
     width: 35%;
@@ -118,3 +125,22 @@ body{
     }
 }
 
+.sectionContainer{
+    margin-top: 30vh;
+}
+
+.bannerSection{
+    background: url("./Images/Banner_img.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    border-radius: 30px;
+    /* border: 2px solid wheat; */
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 1));
+    border-radius: 30px;
+}
