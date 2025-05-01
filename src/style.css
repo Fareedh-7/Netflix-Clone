@@ -39,6 +39,7 @@ body{
     top: 0;
     left: 10px;
     right: 5px;
+    z-index: 1;
 }
 
 .upperNav{
@@ -135,6 +136,7 @@ body{
     height: 100vh;
     width: 100%;
     border-radius: 30px;
+    position: relative;
     /* border: 2px solid wheat; */
 }
 
@@ -143,4 +145,35 @@ body{
     width: 100%;
     background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 1));
     border-radius: 30px;
+}
+
+.bannerContent{
+    /* border: 2px solid white; */
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bannerContent h2{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.bannerContent .bannerSubTitle{
+    font-size: 1.5rem;
+    font-weight: 00;
+    padding-bottom: 1.5rem;
+}
+
+.bannerContent .bannerDescription{
+    padding-bottom: 1rem;
 }
