@@ -170,10 +170,22 @@ body{
 
 .bannerContent .bannerSubTitle{
     font-size: 1.5rem;
-    font-weight: 00;
     padding-bottom: 1.5rem;
 }
 
 .bannerContent .bannerDescription{
     padding-bottom: 1rem;
+}
+
+.inputSection form{
+    border: 2px solid white;
+    width: 100%;
+    display: flex;
+    justify-self: space-between;
+}
+
+.inputLabel input{
+    width: 60%;
+    height: 1rem;
+    border: 2px solid white;
 }
