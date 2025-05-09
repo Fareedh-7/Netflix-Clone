@@ -117,7 +117,6 @@ body{
 
 .menuListItems{
     color: rgba(255, 255, 255, 0.61);
-    font-weight: 550;
     transition: 0.2s;
 
     &:hover{
@@ -219,13 +218,13 @@ body{
     }
 }
 
-.trendingSection{
+.trendingSection,.planSection{
     /* border: 2px solid white; */
     width: 90%;
     margin: 2rem auto;
 }
 
-.trendingSection h2{
+.trendingSection h2,.planSection h2{
     color: white;
     font-size: 2rem;
 }
@@ -236,20 +235,51 @@ body{
     justify-content: space-around;
     margin-top: 1rem;
     width: 100%;
+    /* border: 2px solid white;     */
 }
 
-.card span{
+.card{
+    position: relative;
+}
+
+.carouselNumberContainer{
     position: absolute;
     z-index: 1;
+    left: -13%;
+}
+
+.carouselNumberContainer span{
     font-size: 4rem;
     font-weight: bolder;
     color: rgba(0, 0, 0, 0.863);
     -webkit-text-stroke: 2px white;
 }
 
-.card img{
+.carouselImageContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.carouselImageContainer img{
     width: 100%;
     height: 50vh;
     border-radius: 20px;
-    position: relative;
+}
+
+.planSection{
+    /* border: 2px solid white; */
+    height: 60vh;
+}
+
+.planCards{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: 1rem;
+}
+
+.planCard{
+    width: 24%;
+    border: 2px solid white;
+    border-radius: 20px;
 }
