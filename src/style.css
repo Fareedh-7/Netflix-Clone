@@ -218,13 +218,13 @@ body{
     }
 }
 
-.trendingSection,.planSection{
+.trendingSection,.planSection,.reasonsSection,.faqSection{
     /* border: 2px solid white; */
     width: 90%;
     margin: 2rem auto;
 }
 
-.trendingSection h2,.planSection h2{
+.trendingSection h2,.planSection h2,.reasonsSection h2,.faqSection h2{
     color: white;
     font-size: 2rem;
 }
@@ -235,11 +235,18 @@ body{
     justify-content: space-around;
     margin-top: 1rem;
     width: 100%;
+    cursor: pointer;
     /* border: 2px solid white;     */
 }
 
 .card{
     position: relative;
+    transition: 0.2s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: 0.2s ease-in-out;
+    }
 }
 
 .carouselNumberContainer{
@@ -266,12 +273,7 @@ body{
     border-radius: 20px;
 }
 
-.planSection{
-    /* border: 2px solid white; */
-    height: 60vh;
-}
-
-.planCards{
+.planCards,.reasonsCard{
     display: flex;
     justify-content: space-between;
     height: 80%;
@@ -279,7 +281,86 @@ body{
 }
 
 .planCard{
+    height: 50vh;
     width: 24%;
-    border: 2px solid white;
+    border: 1px solid rgba(172, 171, 171, 0.589);
     border-radius: 20px;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.planCard1{
+    background: linear-gradient(149deg,#1c6172 6.96%,#7c3754 40.17%,#120c1f 73.39%);    
+    
+    &:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+}
+.planCard2{
+    background: linear-gradient(149deg,#1f4375 6.96%,#39225e 40.17%,#120c1f 73.39%);    
+    
+    &:hover{    
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+}
+.planCard3{
+    background: linear-gradient(149deg,#1c5772 6.96%,#4c1f55 40.17%,#120c1f 73.39%);    
+    
+    &:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+}
+.planCard4{
+    background: linear-gradient(149deg,#1c2272 6.96%,#3a0f57 40.17%,#120c1f 73.39%);    
+    
+    &:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+}
+.planCard .description h2{
+    font-size: 1.5rem;
+    font-weight: 550;
+    padding: 1rem 0;
+}
+
+.planCard .description h3{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.planCard .description p{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.reasonCard{
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    border-radius: 20px;
+    width: 24%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    background-color: rgb(49, 48, 48);
+}
+
+.reasonDescription h3{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.reasonDescription p{
+    font-size: 1.1rem;
+    color: rgb(161, 160, 160);
 }
